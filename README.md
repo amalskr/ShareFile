@@ -1,5 +1,5 @@
 # ShareFile
-This is a sample application to develop file share between two android devices via bluetooth
+This is a sample application to develop file share between two android devices via bluetooth. MVVM,Bluetooth
 
 ## Screens
 <p float="left">
