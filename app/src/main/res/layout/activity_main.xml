@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.ui.MainActivity">
+
+    <data>
+
+        <variable
+            name="mainVM"
+            type="com.ceylonapz.myfile.viewmodel.MainViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{mainVM.selectFile()}"
+            android:text="Get file from device" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{mainVM.sendFile()}"
+            android:text="Send via Bluetooth" />
+
+        <Button
+            android:id="@+id/btn_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{mainVM.getDevices()}"
+            android:text="Find Device" />
+
+    </LinearLayout>
+</layout>
